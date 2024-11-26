@@ -30,6 +30,14 @@ public class SimpleCalculatorTest {
         SimpleCalculator simpleCalculator = new SimpleCalculator();
         int rs = simpleCalculator.plus(20, 10);
 
-        assertEquals(30, rs);
+        assertEquals(30, rs); //두개가 같으면 테스트 통과 assertThat사용 가능
+    }
+    @Test
+    @DisplayName("10 - 5 =5")
+    public void t4() {
+        SimpleCalculator simpleCalculator = new SimpleCalculator();
+        int rs = simpleCalculator.minus(20, 10);
+
+        assertEquals(10, rs); //두개가 같으면 테스트 통과 aeertThat
     }
 }
